@@ -21,7 +21,7 @@ long double ldubUpper=2;
 long double ldubTest = (ldubLower+ldubUpper)/2;
 cout<<"Test Points: \n"<<ldubTest<<endl;
 while (bAnswer==false) {
-    if (sin(ldubTest) == 0) {
+    if (ldubFunc(ldubTest) == 0) {
         cout<<"Zero is at: "<<ldubTest<<endl;
         bAnswer=true;
     }
